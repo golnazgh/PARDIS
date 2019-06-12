@@ -20,7 +20,9 @@ You can build using cmake as follows:
 Create a build directory where pardis directory is placed. Then use the following commands:
 
 cd build
+
 cmake -DLLVM_DIR=/path/to/LLVM/lib/cmake/llvm ../pardis
+
 make 
 
 After Pardis is built, you can see its different options using the following:
