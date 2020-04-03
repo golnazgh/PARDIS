@@ -19,7 +19,7 @@ You will need a recent version of C++ compiler in addition to LLVM (version 8 wo
 You can build using cmake as follows:
 Create a build directory where pardis directory is placed. Then use the following commands:
 
-cd build
+mkdir && cd build
 
 cmake -DLLVM_DIR=/path/to/LLVM/lib/cmake/llvm ../pardis
 
@@ -28,4 +28,10 @@ make
 After Pardis is built, you can see its different options using the following:
 
 bin/pardis -help
+
+An example run:
+
+bin/pardis -time -cpnf -prefilter=true -queue-fixpoint -queue-mode=node -source=/path/to/file-to-reduce.c -checker=/path/to/checker.sh -o=/path/to/reduced.c
+
+To write the checker.sh file, you need to return exit code 0 if property of interest is not reproduced. Exit code 1 should be returned if property of interest is reproduced.
 
