@@ -11,6 +11,10 @@ You can find Perses's algorithm in the following paper:
 
 https://people.inf.ethz.ch/suz/publications/perses.pdf
 
+and Perses's benchmark also used in Pardis study in the following link:
+
+https://bitbucket.org/chengniansun/perses_c_benchmarks/src/master/
+
 In addition, there are options that allow for different directions of AST traversal during the reduction process (such as forward, backward).
 
 # How to build
